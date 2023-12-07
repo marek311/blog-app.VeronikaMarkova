@@ -1,0 +1,101 @@
+.blog-header {
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.nav-item {
+    font-size: larger;
+    border-color: black;
+    font-style: italic;
+}
+
+
+.label {
+    font-family: Fira Code;
+    position: absolute;
+    font-size: 35px;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.half-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.half-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    background-size: cover;
+    z-index: 0;
+    filter:blur(3px);
+}
+
+.calendarDates {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.calendar {
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#carouselTrhy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+#headerSubPages {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+@media (max-width: 768px) {
+    .label {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 414px) {
+    .label {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .position-sticky {
+        position: static;
+    }
+}
